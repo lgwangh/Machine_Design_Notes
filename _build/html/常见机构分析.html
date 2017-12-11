@@ -34,6 +34,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="螺纹连接" href="螺纹连接.html" />
     <link rel="prev" title="自由度与速度分析" href="自由度与速度分析.html" />
   
    
@@ -46,6 +47,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="总目录"
              accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="螺纹连接.html" title="螺纹连接"
+             accesskey="N">下一页</a> |</li>
         <li class="right" >
           <a href="自由度与速度分析.html" title="自由度与速度分析"
              accesskey="P">上一页</a> |</li>
@@ -79,6 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#id17">轮系</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="螺纹连接.html">螺纹连接</a></li>
 </ul>
 
     
@@ -128,7 +133,7 @@
 <h3>特性<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
 <p><strong>整转副条件</strong></p>
 <ul class="simple">
-<li>最短杆+最长杆≤其余两杆：双摇杆</li>
+<li>最短杆+最长杆≥其余两杆：双摇杆</li>
 <li><dl class="first docutils">
 <dt>最短杆+最长杆≤其余两杆</dt>
 <dd><ul class="first last">
@@ -187,8 +192,8 @@
 <h3>压力角<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
 <p>尖顶从动件与凸轮接触于A，P点为瞬心，则</p>
 <div class="math">
-\[\tan\alpha=\frac{|l_{AP}\mp e|}{s+\sqrt{r_0^2-e^2}}\]</div>
-<p>其中<span class="math">\(l_{AP}=\frac{\mathrm{d}s}{\mathrm{d}\phi}\arrowvert_A\)</span></p>
+\[\tan\alpha=\frac{|l_{OP}\mp e|}{s+\sqrt{r_0^2-e^2}}\]</div>
+<p>其中<span class="math">\(l_{OP}=\frac{\mathrm{d}s}{\mathrm{d}\phi}\arrowvert_A\)</span></p>
 <p>说明r<sub>0</sub> 减小，α增大；增大偏距可减小推程压力角。</p>
 </div>
 <div class="section" id="id11">
@@ -206,37 +211,38 @@
 <div class="section" id="id13">
 <h3>齿廓<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h3>
 <p>定角速比传动条件：齿廓公法线与齿轮连心线交与定点</p>
-<p>渐开线的发生线为其法线，一对渐开线齿廓齿轮传动比为<span class="math">\(i_{12}=\frac{n_1}{n_2}=\frac{r_2'}{r_1'}=\frac{r_{b2}}{r_{bi}}\)</span>，其中r’为节圆半径，r<sub>b</sub> 为基圆半径。</p>
+<p>渐开线的发生线为其法线，一对渐开线齿廓齿轮传动比为<span class="math">\(i_{12}=\frac{n_1}{n_2}=\frac{r_2'}{r_1'}=\frac{r_{b2}}{r_{b1}}\)</span>，其中r’为节圆半径，r<sub>b</sub> 为基圆半径。</p>
 </div>
 <div class="section" id="id14">
 <h3>齿轮参数<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h3>
+<p>标*的均为节圆上的值。</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="5%" />
+<col width="6%" />
 <col width="8%" />
-<col width="5%" />
+<col width="6%" />
 <col width="5%" />
 <col width="10%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
 <col width="5%" />
-<col width="5%" />
+<col width="6%" />
 <col width="8%" />
-<col width="8%" />
+<col width="7%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">齿厚</th>
-<th class="head">齿槽宽</th>
-<th class="head">齿距</th>
+<tr class="row-odd"><th class="head">齿厚*</th>
+<th class="head">齿槽宽*</th>
+<th class="head">齿距*</th>
 <th class="head">齿宽</th>
 <th class="head">节圆半径</th>
 <th class="head">基圆半径</th>
 <th class="head">齿顶圆半径</th>
 <th class="head">齿根圆半径</th>
 <th class="head">齿数</th>
-<th class="head">模数</th>
-<th class="head">压力角</th>
+<th class="head">模数*</th>
+<th class="head">压力角*</th>
 <th class="head">全齿高</th>
 </tr>
 </thead>
@@ -257,7 +263,7 @@
 </tbody>
 </table>
 <div class="math">
-\[\begin{split}m=\frac{p}{\pi}, p=s+e
+\[\begin{split}m=\frac{p}{\pi}, p=s+e\\
 h=h_a+h_f, h_a=h_a^* m, h_f=(h_a^* +c^*)m\\
 d=mz, d_b=d\cos\alpha\end{split}\]</div>
 <p>对于标准齿轮，<span class="math">\(h_a^*=1.0,c^*=0.25,s=e=\frac{p}{2},\alpha=20^{\circ}\)</span></p>
@@ -302,7 +308,7 @@ e=\frac{\pi m}{2}-2xm\tan\alpha
 <p>构成：两个太阳轮、一个行星架H（其中可以有一个固定） + 若干行星轮。</p>
 <p>令 <span class="math">\(n_i^H=n_i-n_H\)</span> ，得到转化轮系，则传动比（在转化轮系中确定正负）：</p>
 <div class="math">
-\[i_{GK}^H=\frac{n_G^H}{n_K^H}=\frac{n_G-n_H}{n_K^H}=\prod_{i=G+1}^K\frac{z_{i从}}{z_{i-1主}}\]</div>
+\[i_{GK}^H=\frac{n_G^H}{n_K^H}=\frac{n_G-n_H}{n_K-n_H}=\prod_{i=G+1}^K\frac{z_{i从}}{z_{i-1主}}\]</div>
 <p>可用于获取大传动比。</p>
 </div>
 <div class="section" id="id20">
@@ -328,6 +334,9 @@ e=\frac{\pi m}{2}-2xm\tan\alpha
         <a class="btn btn-default" href="自由度与速度分析.html" title="上一章 (use the left arrow)">自由度与速度分析</a>
       </div>
     
+      <div class="pull-right">
+        <a class="btn btn-default" href="螺纹连接.html" title="下一章 (use the right arrow)">螺纹连接</a>
+      </div>
     </div>
     <div class="clearer"></div>
   
@@ -340,6 +349,9 @@ e=\frac{\pi m}{2}-2xm\tan\alpha
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="总目录"
              >索引</a></li>
+        <li class="right" >
+          <a href="螺纹连接.html" title="螺纹连接"
+             >下一页</a> |</li>
         <li class="right" >
           <a href="自由度与速度分析.html" title="自由度与速度分析"
              >上一页</a> |</li>
