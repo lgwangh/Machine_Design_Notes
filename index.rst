@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Machine_Design_Notes's documentation!
-================================================
+机械设计基础复习笔记
+====================
 
 .. toctree::
    :maxdepth: 2
@@ -14,10 +14,3 @@ Welcome to Machine_Design_Notes's documentation!
    常见机构分析
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

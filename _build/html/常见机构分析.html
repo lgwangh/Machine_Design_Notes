@@ -59,7 +59,7 @@
   <div id="left-column">
     <div class="sphinxsidebar">
         <a href="
-    index.html" class="text-logo">材料数字化_课堂展示</a>
+    index.html" class="text-logo">机械设计基础复习笔记</a>
         
 <div class="sidebar-block">
   <div class="sidebar-wrapper">
@@ -73,6 +73,8 @@
 <li class="toctree-l1"><a class="reference internal" href="自由度与速度分析.html">自由度与速度分析</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">常见机构分析</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">平面四杆机构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">凸轮结构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">齿轮机构</a></li>
 </ul>
 </li>
 </ul>
@@ -149,11 +151,97 @@
 <p><strong>死点位置</strong></p>
 <p>曲柄摇杆机构，摇杆主动，则在曲柄与连杆共线时死点。摇杆在两极限位置间有摆角ψ，曲柄在两极限位置间有极位夹角θ的补角。</p>
 <p><strong>急回特性</strong></p>
-<p>行程速度变化系数:math:<cite>K=frac{omega_{back}}{omega_{go}}=frac{180^{circ}+theta}{180^{circ}-theta}</cite></p>
+<p>行程速度变化系数<img class="math" src="_images/math/4c7602d92dc6b041901db242a8e24bf9610cbc76.png" alt="K=\frac{\omega_{back}}{\omega_{go}}=\frac{180^{\circ}+\theta}{180^{\circ}-\theta}"/></p>
 </div>
 <div class="section" id="id5">
 <h3>设计<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
 <p>已知(K||给定连杆位置)&amp;&amp;一杆长，可以用几何法；其他情况可能用到解析法、图谱法。</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>凸轮结构<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id7">
+<h3>分类<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<p>盘形/移动/圆柱，尖顶/滚子/平底</p>
+</div>
+<div class="section" id="id8">
+<h3>从动件运动规律<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<p>参数：基圆半径r<sub>0</sub> ，偏距e，推程运动角Φ，远休止角Φ<sub>s</sub> ，回程运动角Φ‘，近休止角Φ<sub>s</sub>’。</p>
+<p>根据位移线图s-φ，有常见运动规律：</p>
+<ul class="simple">
+<li>等速运动（刚性冲击）</li>
+<li>简谐运动（柔性冲击）</li>
+<li>正弦加速度运动（无冲击）</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>回转法<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li>要先做出偏距圆，再向其引切线</li>
+<li>注意滚子、平底情况下从动件直杆底端的实际位置</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>压力角<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<p>尖顶从动件与凸轮接触于A，P点为瞬心，则</p>
+<div class="math">
+<p><img src="_images/math/88f1628cfc64a4311decc268e70afadb1d8e03c9.png" alt="\tan\alpha=\frac{|l_{AP}\mp e|}{s+\sqrt{r_0^2-e^2}}"/></p>
+</div><p>其中<img class="math" src="_images/math/60ab6184f4245c23d3e661e8f0c3c24a0ef70490.png" alt="l_{AP}=\frac{\mathrm{d}s}{\mathrm{d}\phi}\arrowvert_A"/></p>
+<p>说明r<sub>0</sub> 减小，α增大；增大偏距可减小推程压力角。</p>
+</div>
+<div class="section" id="id11">
+<h3>图解法设计凸轮<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
+<p>分成多份用回转法设计，注意：</p>
+<ul class="simple">
+<li>滚子从动件：滚子轴心轨迹为理论轮廓，其外凸部分最小曲率ρ<sub>min</sub> 应大于滚子半径r<sub>T</sub></li>
+<li>平底从动件：基圆太小会引起运动失真</li>
+<li>摆动从动件：校核压力角时注意其运动方向</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id12">
+<h2>齿轮机构<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id13">
+<h3>齿廓<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h3>
+<p>定角速比传动条件：齿廓公法线与齿轮连心线交与定点</p>
+<p>渐开线的发生线为其法线，一对渐开线齿廓齿轮传动比为<img class="math" src="_images/math/ab6a298cc29bee20cf5951db02dc6336a015180f.png" alt="i_{12}=\frac{n_1}{n_2}=\frac{r_2'}{r_1'}=\frac{r_{b2}}{r_{bi}}"/>，其中r‘为节圆半径，r<sub>b</sub> 为基圆半径。</p>
+</div>
+<div class="section" id="id14">
+<h3>齿轮参数<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="10%" />
+<col width="7%" />
+<col width="7%" />
+<col width="14%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">齿厚</th>
+<th class="head">齿槽宽</th>
+<th class="head">齿距</th>
+<th class="head">齿宽</th>
+<th class="head">节圆半径</th>
+<th class="head">基圆半径</th>
+<th class="head">齿顶圆半径</th>
+<th class="head">齿根圆半径</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>s</td>
+<td>e</td>
+<td>p</td>
+<td>b</td>
+<td>d</td>
+<td>d<sub>b</sub></td>
+<td>d<sub>a</sub></td>
+<td>d<sub>f</sub></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>

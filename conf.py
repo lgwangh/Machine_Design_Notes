@@ -21,7 +21,6 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -80,12 +79,13 @@ pygments_style = 'sphinx'
 todo_include_todos = False
 
 
+
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-#html_theme = 'alabaster'
+
 import guzzle_sphinx_theme
 
 html_theme_path = guzzle_sphinx_theme.html_theme_path()
@@ -94,10 +94,9 @@ html_theme = 'guzzle_sphinx_theme'
 # Register the theme as an extension to generate a sitemap.xml
 #extensions.append("guzzle_sphinx_theme")
 
-# Guzzle theme options (see theme.conf for more information)
+#Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
-    # Set the name of the project to appear in the sidebar
-    "project_nav_name": "材料数字化_课堂展示",
+    "project_nav_name": "机械设计基础复习笔记",
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -130,7 +129,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Machine_Design_Notesdoc'
+htmlhelp_basename = '机械设计基础复习笔记'
 
 
 # -- Options for LaTeX output ---------------------------------------------
