@@ -56,14 +56,15 @@ d    d\ :sub:`2` d\ :sub:`1` P     n    P\ :sub:`h` ψ         α      β
 强度
 ----
 
-核心方程： :math:`\sigma_e\le[\sigma]`
+核心方程：当量应力 :math:`\sigma_e\le[\sigma]`
 
 - :math:`\sigma_e=\sqrt{\sigma^2+3\tau^2}\approx\frac{1.3F_a}{\pi d_1^2/4},其中\sigma=\frac{F_a}{\pi d_1^2/4},\tau=\frac{F_a\tan(\psi+\rho')d_2/2}{\pi d_1^3/16}`
-	- :math:`F_a=F_E+F_R,其中残余预紧力F_R=F_0-F_E(1-\frac{k_b}{k_b+k_c}),也可根据F_E与\underline{载荷变化情况}估测`
+	- :math:`受轴向载荷下,F_a=F_E+F_R,其中残余预紧力F_R=F_0-F_E(1-\frac{k_b}{k_b+k_c}),也可根据F_E与\\\underline{载荷变化情况}估测`
 		- :math:`工作载荷F_E根据\underline{机构受力}算得`
 		- :math:`相对刚性系数\frac{k_b}{k_b+k_c}取决于\underline{垫圈材料}`
+	- :math:`受横向载荷,F_a\ge\frac{CF}{mf},有受力件/绞制孔时直接校核\tau`
 - :math:`[\sigma]=\frac{\sigma_s}{S}`
 	- :math:`\sigma_s取决于\underline{力学性能等级}`
-	- :math:`S取决于\underline{连接受载情况表}`
+	- :math:`S取决于\underline{连接受载情况}`
 
 增大强度的措施：减小螺栓刚度、增大连接件刚度、使用悬置螺母、减小应力集中。

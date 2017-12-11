@@ -1,0 +1,308 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>齿轮传动 &#8212; Machine_Design_Notes 1 文档</title>
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="prev" title="螺纹连接" href="螺纹连接.html" />
+  
+   
+
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="螺纹连接.html" title="螺纹连接"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Machine_Design_Notes 1 文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+        <a href="
+    index.html" class="text-logo">机械设计基础复习笔记</a>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>內容目录</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="自由度与速度分析.html">自由度与速度分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="常见机构分析.html">常见机构分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="螺纹连接.html">螺纹连接</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">齿轮传动</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">轮齿设计准则</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">齿轮材料</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">传动作用力</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">强度设计</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">润滑</a></li>
+</ul>
+</li>
+</ul>
+
+    
+  </div>
+</div>
+        
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+              <li>齿轮传动</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="id1">
+<h1>齿轮传动<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>轮齿设计准则<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">失效形式</th>
+<th class="head">易发生情景</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>轮齿折断</td>
+<td>脆性大，齿根</td>
+</tr>
+<tr class="row-odd"><td>齿面点蚀</td>
+<td>闭式软齿面，齿根表面靠近节线</td>
+</tr>
+<tr class="row-even"><td>齿面胶合</td>
+<td>重载，齿顶、齿根</td>
+</tr>
+<tr class="row-odd"><td>齿面磨损</td>
+<td>开式</td>
+</tr>
+<tr class="row-even"><td>齿面塑变</td>
+<td>重载，软齿面</td>
+</tr>
+</tbody>
+</table>
+<p>因此闭式计算弯曲疲劳强度、接触疲劳强度；开式计算弯曲疲劳强度。</p>
+</div>
+<div class="section" id="id3">
+<h2>齿轮材料<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">热处理</th>
+<th class="head">性能</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>表面淬火</td>
+<td>不磨齿</td>
+</tr>
+<tr class="row-odd"><td>渗碳淬火</td>
+<td>要磨齿，耐冲击</td>
+</tr>
+<tr class="row-even"><td>调质</td>
+<td>软齿面，可精切</td>
+</tr>
+<tr class="row-odd"><td>正火</td>
+<td>软齿面</td>
+</tr>
+<tr class="row-even"><td>渗氮</td>
+<td>不磨齿，不耐冲击</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h2>传动作用力<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id5">
+<h3>直齿轮<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<p>主动轮受到的法向力 <span class="math">\(F_n\)</span> 可分解成：</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+圆周力(与n_1反向)\ &amp;F_t=F_n\cos\alpha=\frac{2T_1}{d_1}\\
+径向力(指向圆心)\ &amp;F_r=F_n\sin\alpha
+\end{aligned}\end{split}\]</div>
+<p>其中主动轮力矩 <span class="math">\(T_1\)</span> 可根据功率计算。</p>
+</div>
+<div class="section" id="id6">
+<h3>斜齿轮<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<p>主动轮受到的法向力 <span class="math">\(F_n\)</span> 可分解成：</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+圆周力(与n_1反向)\ &amp;F_t=F_n\cos\alpha_n\cos\beta=\frac{2T_1}{d_1}\\
+径向力(指向圆心)\ &amp;F_r=F_n\sin\alpha_n\\
+轴向力(左/右手法则)\ &amp;F_a=F_n\cos\alpha_n\sin\beta
+\end{aligned}\end{split}\]</div>
+<p>其中主动轮力矩 <span class="math">\(T_1\)</span> 可根据功率计算。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>强度设计<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<p>核心方程：弯曲强度 <span class="math">\(\sigma_F\le[\sigma_F]\)</span> ，接触强度 <span class="math">\(\sigma_H\le[\sigma_H]\)</span> （仅闭式）</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>弯曲强度</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt><span class="math">\(\sigma_F=\frac{2KT_1Y_{Fa}Y_{Sa}}{bm^2z_1}\)</span></dt>
+<dd><ul class="first last">
+<li><span class="math">\(载荷系数K取决于\underline{原动机和冲击情况}\)</span></li>
+<li><span class="math">\(齿形系数Y_{Fa}查\underline{z_v-齿形系数图}\)</span></li>
+<li><span class="math">\(应力修正系数Y_{Sa}查\underline{z_v-应力修正系数图}\)</span></li>
+<li><span class="math">\(T_1取决于\underline{机构功率}\)</span></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><span class="math">\([\sigma_F]=\frac{\sigma_{FE}}{S_F}\)</span></dt>
+<dd><ul class="first last">
+<li><span class="math">\(弯曲疲劳极限\sigma_{FE}取决于\underline{齿轮材料}\)</span></li>
+<li><span class="math">\(安全系数S_F取决于\underline{可靠度要求}\)</span></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>接触强度</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt><span class="math">\(\sigma_H=2.5Z_E\sqrt{\frac{2KT_1}{bd_1^2}\frac{u\pm1}{u}}\)</span></dt>
+<dd><ul class="first last">
+<li><span class="math">\(载荷系数K取决于\underline{原动机和冲击情况}\)</span></li>
+<li><span class="math">\(弹性系数Z_E取决于\underline{两轮材料}\)</span></li>
+<li><span class="math">\(齿数比u=i_{12}\)</span></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><span class="math">\([\sigma_H]=\frac{\sigma_{H\;lim}}{S_H}\)</span></dt>
+<dd><ul class="first last">
+<li><span class="math">\(弯曲疲劳极限\sigma_{H\;lim}取决于\underline{齿轮材料}\)</span></li>
+<li><span class="math">\(安全系数S_H取决于\underline{可靠度要求}\)</span></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>润滑<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<p>可选择油池润滑、喷油润滑</p>
+</div>
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="螺纹连接.html" title="上一章 (use the left arrow)">螺纹连接</a>
+      </div>
+    
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="螺纹连接.html" title="螺纹连接"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Machine_Design_Notes 1 文档</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2017, Luke. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>

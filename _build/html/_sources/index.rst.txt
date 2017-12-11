@@ -8,10 +8,10 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    自由度与速度分析
    常见机构分析
    螺纹连接
+   齿轮传动
 
 
