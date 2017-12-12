@@ -106,7 +106,7 @@ d          z     p     ？？？ a
 	- :math:`工作情况系数K_A取决于\underline{载荷种类和原动机}`
 	- :math:`齿形系数K_z取决于\underline{小链轮齿数z_1}`
 	- :math:`多排链系数K_m取决于\underline{排数}`
-	- :math:`P取决于\underline{工作要求}`
+	- :math:`P取决于\underline{工作要求},润滑不当时大幅下降`
 - :math:`P_0取决于\underline{n_1和链型号}`
 
 润滑和布置
