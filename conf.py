@@ -17,9 +17,48 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+if on_rtd:
+    latex_elements = {
+    # The paper size ('letterpaper' or 'a4paper').
+    #'papersize': 'letterpaper',
+
+    # The font size ('10pt', '11pt' or '12pt').
+    #'pointsize': '10pt',
+
+    # Additional stuff for the LaTeX preamble.
+    'preamble': r'''
+    \hypersetup{unicode=true}
+    \usepackage{CJKutf8}
+    \DeclareUnicodeCharacter{00A0}{\nobreakspace}
+    \DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
+    \DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
+    \DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}
+    \DeclareUnicodeCharacter{2713}{x}
+    \DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}
+    \DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}
+    \DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}
+    \DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
+    \DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}
+    \begin{CJK}{UTF8}{gbsn}
+    \AtEndDocument{\end{CJK}}
+    ''',
+    }
+else:
+    latex_elements = {
+        'papersize' : 'a4paper',
+        'utf8extra' : '',
+        'inputenc'  : '',
+        'babel'     : r'''\usepackage[english]{babel}''',
+        'preamble' : r'''
+        \usepackage{ctex}
+        ''',
+    }
 
 # -- General configuration ------------------------------------------------
 
@@ -86,18 +125,20 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 
-import guzzle_sphinx_theme
+# import guzzle_sphinx_theme
 
-html_theme_path = guzzle_sphinx_theme.html_theme_path()
-html_theme = 'guzzle_sphinx_theme'
+# html_theme_path = guzzle_sphinx_theme.html_theme_path()
+# html_theme = 'guzzle_sphinx_theme'
 
-# Register the theme as an extension to generate a sitemap.xml
-#extensions.append("guzzle_sphinx_theme")
+# # Register the theme as an extension to generate a sitemap.xml
+# #extensions.append("guzzle_sphinx_theme")
 
-#Guzzle theme options (see theme.conf for more information)
-html_theme_options = {
-    "project_nav_name": "机械设计基础复习笔记",
-}
+# #Guzzle theme options (see theme.conf for more information)
+# html_theme_options = {
+#     "project_nav_name": "机械设计基础复习笔记",
+# }
+
+html_theme = 'nature'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
