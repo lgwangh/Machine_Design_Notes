@@ -59,12 +59,14 @@
 
 对于共有z个滚动体的径向接触轴承，在轴向载荷 :math:`F_a` 作用下， :math:`F_{a1}=\frac{F_a}{z}` ；在径向载荷 :math:`F_r` 作用下， :math:`F_{r\ max}\approx\frac{5F_r}{z}`
 
-轴承寿命 :math:`L_h=\frac{10^6}{60n}(\frac{C}{P})^{\varepsilon}(小时)`
+轴承寿命 :math:`L_h=\frac{10^6}{60n}(\frac{f_t C}{f_p P})^{\varepsilon}(小时)`
 
+- :math:`温度系数f_t取决于\underline{工作温度}`
 - :math:`基本额定动载荷C取决于\underline{轴承型号}`
+- :math:`载荷系数f_p取决于\underline{载荷性质}`
 - :math:`当量动载荷P=XF_r+YF_a`
 	- :math:`F_r和F_a取决于\underline{机构受力}`
-	- :math:`X和Y取决于\underline{轴承类型和\frac{F_a}{C_{0r}}}，C_{0r}为径向额定静载荷`
+	- :math:`X和Y取决于\underline{轴承类型和\frac{F_a}{C_{0r}}}，C_{0r}为径向额定静载荷，实际上\underline{常用\frac{F_a}{F_r}判断}`
 - :math:`球轴承\varepsilon=3,滚子轴承\varepsilon=\frac{10}{3}`
 
 还应进行类似的静强度校核。
