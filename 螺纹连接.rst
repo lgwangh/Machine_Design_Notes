@@ -32,7 +32,7 @@ d    d\ :sub:`2` d\ :sub:`1` P     n    P\ :sub:`h` ψ         α      β
 
 	T=F_a\frac{d_2}{2}\tan(\psi\pm\rho')
 
-上升时为阻力（取+），下降时为驱动力（取-），则 :math:`\psi\le\rho'` 时自锁。
+旋入时为阻力（取+），退出时为驱动力（取-），则 :math:`\psi\le\rho'` 时自锁。
 
 螺旋副效率
 
@@ -49,22 +49,26 @@ d    d\ :sub:`2` d\ :sub:`1` P     n    P\ :sub:`h` ψ         α      β
 
 .. math::
 	
-	T=F_a\frac{d_2}{2}\tan(\psi\pm\rho')+f_c F_a r_f\\
+	T=F_a\frac{d_2}{2}\tan(\psi+\rho')+f_c F_a r_f\\
 	在f_c=f'=0.15条件下,T=0.2F_a d\\
-	一般预紧应力\sigma=\frac{F_a}{\pi d_1^2/4}\le 0.5\sim 0.7 \sigma_s
+	一般预紧应力\sigma=\frac{F_a}{\pi d_1^2/4}= 0.5\sim 0.7 \sigma_s
 
 强度
 ----
 
-核心方程：当量应力 :math:`\sigma_e\le[\sigma]`
+受轴向载荷下，核心方程：当量应力 :math:`\sigma_e\le[\sigma]`
 
 - :math:`\sigma_e=\sqrt{\sigma^2+3\tau^2}\approx\frac{1.3F_a}{\pi d_1^2/4},其中\sigma=\frac{F_a}{\pi d_1^2/4},\tau=\frac{F_a\tan(\psi+\rho')d_2/2}{\pi d_1^3/16}`
-	- :math:`受轴向载荷下,F_a=F_E+F_R,其中残余预紧力F_R=F_0-F_E(1-\frac{k_b}{k_b+k_c}),也可根据F_E与\\\underline{载荷变化情况}估测`
+	- :math:`F_a=F_E+F_R,其中残余预紧力F_R=F_0-F_E(1-\frac{k_b}{k_b+k_c}),也可根据F_E与\underline{载荷变化情况}估测`
 		- :math:`工作载荷F_E根据\underline{机构受力}算得`
 		- :math:`相对刚性系数\frac{k_b}{k_b+k_c}取决于\underline{垫圈材料}`
-	- :math:`受横向载荷,F_a\ge\frac{CF}{mf},有受力件/绞制孔时直接校核\tau`
 - :math:`[\sigma]=\frac{\sigma_s}{S}`
 	- :math:`\sigma_s取决于\underline{力学性能等级}`
 	- :math:`S取决于\underline{连接受载情况}`
+
+受横向载荷下：
+
+- :math:`有间隙的连接,F_a=F_0\ge\frac{CF}{mf},F_0为预紧力,可靠性系数C=1.1\sim1.3,F为横向外力，\\m为接合面数目,f为接合面摩擦系数`
+- :math:`有受力件/绞制孔时直接校核\tau=\frac{F}{\pi d_0^2/4}\le[\tau]`
 
 增大强度的措施：减小螺栓刚度、增大连接件刚度、使用悬置螺母、减小应力集中。

@@ -11,7 +11,7 @@
 
 按形状还可分为直轴、曲轴、挠性钢丝轴。
 
-钢材种类和热处理对弹性摸量影响甚小，合金钢的意义在于满足特殊要求（高温、高速、重载）
+钢材种类和热处理对弹性摸量影响甚小，合金钢的意义在于满足特殊要求（高温、高速、重载）。
 
 轴的结构设计
 ++++++++++++
@@ -29,9 +29,9 @@
 
 对于\ **传动轴**\ ， :math:`\tau=\frac{9.55\times10^6P}{0.2d^3n}\le[\tau]` 。单位：P为kw，d为mm，n为r/min，[τ]为MPa。
 
-对于\ **转轴**\ ，核心方程 :math:`\sigma_e\le[\sigma_{-1b}]`
+对于\ **转轴**\ ，核心方程： :math:`折合应力\sigma_e\le[\sigma_{-1b}]`
 
-- :math:`折合应力\sigma_e=\frac{1}{0.1d^3}\sqrt{M^2+(\alpha T)^2}`
+- :math:`\sigma_e=\frac{1}{0.1d^3}\sqrt{M^2+(\alpha T)^2}`
 	- :math:`合成弯矩M=\sqrt{M_H^2+M_V^2}`
 		- :math:`将\underline{外载荷分解到水平、竖直}，得到支反力F_H、F_V，即可得到M_H图和M_V图`
 	- :math:`\underline{分析扭矩}，可得到T图`
@@ -64,7 +64,7 @@
 - :math:`基本额定动载荷C取决于\underline{轴承型号}`
 - :math:`当量动载荷P=XF_r+YF_a`
 	- :math:`F_r和F_a取决于\underline{机构受力}`
-	- :math:`X和Y取决于\underline{轴承类型和\frac{F_a}{C_{0e}}}`
+	- :math:`X和Y取决于\underline{轴承类型和\frac{F_a}{C_{0r}}}，C_{0r}为径向额定静载荷`
 - :math:`球轴承\varepsilon=3,滚子轴承\varepsilon=\frac{10}{3}`
 
 还应进行类似的静强度校核。

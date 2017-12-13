@@ -41,7 +41,7 @@
 
 	\begin{aligned}
 	圆周力(与n_1反向)\ &F_t=F_n\cos\alpha=\frac{2T_1}{d_1}\\
-	径向力(指向圆心)\ &F_r=F_n\sin\alpha
+	径向力(指向圆心)\ &F_r=F_n\sin\alpha=F_t\tan\beta
 	\end{aligned}
 
 其中主动轮力矩 :math:`T_1` 可根据功率计算。
@@ -55,8 +55,8 @@
 
 	\begin{aligned}
 	圆周力(与n_1反向)\ &F_t=F_n\cos\alpha_n\cos\beta=\frac{2T_1}{d_1}\\
-	径向力(指向圆心)\ &F_r=F_n\sin\alpha_n\\
-	轴向力(左/右手法则)\ &F_a=F_n\cos\alpha_n\sin\beta
+	径向力(指向圆心)\ &F_r=F_n\sin\alpha_n=F_t\tan\alpha_t\\
+	轴向力(左/右手法则)\ &F_a=F_n\cos\alpha_n\sin\beta=F_t\tan\beta
 	\end{aligned}
 
 其中主动轮力矩 :math:`T_1` 可根据功率计算。
@@ -80,8 +80,8 @@
 		- :math:`载荷系数K取决于\underline{原动机和冲击情况}`
 		- :math:`弹性系数Z_E取决于\underline{两轮材料}`
 		- :math:`齿数比u=i_{12}`
-	- :math:`[\sigma_H]=\frac{\sigma_{H\;lim}}{S_H}`
-		- :math:`弯曲疲劳极限\sigma_{H\;lim}取决于\underline{齿轮材料}`
+	- :math:`[\sigma_H]=\frac{\sigma_{H\ lim}}{S_H}`
+		- :math:`弯曲疲劳极限\sigma_{H\ lim}取决于\underline{齿轮材料}`
 		- :math:`安全系数S_H取决于\underline{可靠度要求}`
 
 润滑

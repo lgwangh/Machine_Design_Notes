@@ -30,16 +30,16 @@ d        L     α        a      φ
 	&紧边拉力与松边拉力\frac{F_1}{F_2}=e^{f\alpha},\alpha应取\alpha_1\\
 	&传递的圆周力F=F_1-F_2=\frac{P}{v},初拉力F_0=\frac{1}{2}(F_1+F_2)\\
 	&静止时轴上拉力F_Q=2F_0\sin\frac{\alpha_1}{2}\\
-	&对于V带,f'=\frac{f'}{\sin\frac{\phi}{2}}
+	&对于V带,当量摩擦系数f'=\frac{f}{\sin\frac{\phi}{2}}
 	\end{aligned}
 
 **应力分析：**
 
-- 紧边/松边拉力产生的拉应力： :math:`\sigma_1=\frac{F_1}{`A},\sigma_2=\frac{F_2}{A}` ，在带轮上渐变。
+- 紧边/松边拉力产生的拉应力： :math:`\sigma_1=\frac{F_1}{A},\sigma_2=\frac{F_2}{A}` ，在带轮上渐变。
 - 离心力产生的拉应力： :math:`\sigma_c=\frac{qv^2}{A}` ，q为线密度。
 - 弯曲应力： :math:`\sigma_b=\frac{2yE}{d}` ，y为带的中性层到最外层的距离，仅在带轮上。
 
-这样一般带一周完成两个应力循环。
+这样一般带转动一周完成两个应力循环。
 
 **滑动：**
 
@@ -62,7 +62,7 @@ d        L     α        a      φ
 		- :math:`d_2=\frac{n_1}{n_2}d_1(1-\varepsilon)`
 	- :math:`包角修正系数K_{\alpha}取决于\underline{小带轮包角\alpha_1}`
 		- :math:`\alpha_1=\pi-\frac{d_2-d_1}{a}`
-			- :math:`先初步确定a_0=0.7~2(d_1+d_2),以此确定L_0,选取接近的L_d,则a=a_0+\frac{L_d-L_0}{2}`
+			- :math:`先初步确定a_0=0.7\sim2(d_1+d_2),以此确定L_0,选取接近的L_d,则a=a_0+\frac{L_d-L_0}{2}`
 	- :math:`带长修正系数K_L取决于\underline{带型号和L_d}`
 
 链传动
@@ -81,8 +81,8 @@ d          z     p     ？？？ a
 
 .. math::
 	
-	d=\frac{p}{\sin\frac{\pi}{z}}\\
-	链节数最好为偶数
+	d=\frac{p}{\sin\frac{\pi}{z}}，齿形一般为“三圆弧一直线”\\
+	链节数最好为偶数，链轮齿数最好为奇数
 
 多边形效应
 ++++++++++
@@ -95,7 +95,7 @@ d          z     p     ？？？ a
 - :math:`链条紧边拉力F_1=F+F_c+F_y,松边拉力F_1=F_c+F_y`
 	- :math:`F为有效拉力`
 	- :math:`离心拉力F_c=qv^2,q为线密度`
-	- :math:`悬垂拉力F_y=K_y qga,垂度系数K_y与中心连线与水平线的夹角有关`
+	- :math:`悬垂拉力F_y=K_y qga,垂度系数K_y负相关于轮心连线与水平线的夹角`
 
 强度设计
 ++++++++
@@ -106,8 +106,8 @@ d          z     p     ？？？ a
 	- :math:`工作情况系数K_A取决于\underline{载荷种类和原动机}`
 	- :math:`齿形系数K_z取决于\underline{小链轮齿数z_1}`
 	- :math:`多排链系数K_m取决于\underline{排数}`
-	- :math:`P取决于\underline{工作要求},润滑不当时大幅下降`
-- :math:`P_0取决于\underline{n_1和链型号}`
+	- :math:`P取决于\underline{工作要求}`
+- :math:`P_0取决于\underline{n_1和链型号},润滑不当时大幅下降`
 
 润滑和布置
 ++++++++++

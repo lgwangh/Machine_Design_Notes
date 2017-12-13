@@ -1,6 +1,8 @@
 蜗轮蜗杆传动
 ============
 
+可以车削出阿基米德蜗杆，也可以滚刀铣削出渐开线蜗杆。
+
 蜗杆参数
 --------
 
@@ -16,7 +18,7 @@ m\ :sub:`a1` α\ :sub:`a1` z\ :sub:`1` q        γ
 	&正确啮合时,m=m_{a1}=m_{t2},\alpha=\alpha_{a1}=\alpha_{t2}\\
 	&对于正交传动,正确啮合还要求蜗轮螺旋角\beta=\gamma\\
 	&q=\frac{d_1}{m},\tan\gamma=\frac{z_1 p_x}{\pi d_1}=\frac{z_1}{q}\\
-	&则传动比i_{i1}=\frac{n_1}{n_2}=\frac{z_2}{z_1},齿面间滑动速度v_s=\frac{v_1}{\cos\gamma}
+	&则传动比i_{12}=\frac{n_1}{n_2}=\frac{z_2}{z_1},齿面间滑动速度v_s=\frac{v_1}{\cos\gamma}
 	\end{aligned}
 
 受力分析
