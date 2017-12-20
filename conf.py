@@ -138,7 +138,7 @@ todo_include_todos = False
 #     "project_nav_name": "机械设计基础复习笔记",
 # }
 
-html_theme = 'nature'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
